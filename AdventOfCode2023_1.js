@@ -28,7 +28,7 @@ function lastNumber(chain) { return firstNumber(reverse(chain)) }
 
 let total = 0;
 for (let line of lines) {
-  line = preParseInput(line);
+  line = preParseInput(line); // comment out for part 1
   //console.log(line + ":" + firstNumber(line) + lastNumber(line));
   total += parseInt(firstNumber(line) + lastNumber(line));
 }
